@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo daora</title>
+</head>
+<body>
+    <h1 id="topo">Aula 01 - HTML Básico</h1>
+    <p>Primeira aula de HTML, sem CSS. O objetivo é montar a estrutura da página
+    usando apenas as marcações básicas: títulos, parágrafos, listas, tabelas e links.</p>
+
+    <h2>Navegação</h2>
+    <ul>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="listas">Listas</h2>
+    <p>Uma lista não ordenada marca itens sem sequência definida:</p>
+    <ul>
+        <li>Introdução às Tecnologias Web</li>
+        <li>Algoritmos e Programação em C</li>
+        <li>Banco de Dados</li>
+        <li>Engenharia de Requisitos</li>
+    </ul>
+
+    <p>Uma lista pode conter outra lista dentro dela:</p>
+    <ul>
+        <li>Programação
+            <ul>
+                <li>Algoritmos e Programação em C</li>
+                <li>Introdução às Tecnologias Web</li>
+            </ul>
+        </li>
+        <li>Dados
+            <ul>
+                <li>Banco de Dados</li>
+                <li>Modelagem de Dados</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Uma lista ordenada é usada quando a sequência importa:</p>
+    <ol>
+        <li>Criar o arquivo com a extensão .html</li>
+        <li>Escrever o DOCTYPE e a tag html</li>
+        <li>Preencher o head com o charset e o title</li>
+        <li>Montar o conteúdo dentro do body</li>
+        <li>Abrir o arquivo no navegador para conferir</li>
+    </ol>
+
+    <a href="#topo">Voltar para o início</a>
+
+    <hr>
+
+    <h2 id="tabelas">Tabelas</h2>
+    <p>Uma tabela é formada por linhas (tr), células de cabeçalho (th) e células
+    de dados (td). O colspan faz uma célula ocupar mais de uma coluna:</p>
+    <table border="1">
+        <tr>
+            <th colspan="3">Notas do Semestre</th>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Disciplina</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <th>Goat</th>
+            <th>Web</th>
+            <th>inf</th>
+        </tr>
+    </table>
+
+    <p>Já o rowspan faz uma célula ocupar mais de uma linha. Na tabela abaixo,
+    os dias com duas aulas aparecem uma única vez:</p>
+    <table border="1">
+        <tr>
+            <th>Dia</th>
+            <th>Disciplina</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Segunda</td>
+            <td>ITW</td>
+        </tr>
+        <tr>
+            <td>Algoritmos e Programação em C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Terça</td>
+            <td>Banco de Dados</td>
+        </tr>
+        <tr>
+            <td>Engenharia de Requisitos</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>Modelagem de Dados</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total: 5 aulas na semana</td>
+        </tr>
+    </table>
+
+    <a href="#topo">Voltar para o início</a>
+
+    <hr>
+
+    <h2 id="links">Links</h2>
+    <p>Links internos usam o id de um elemento da própria página. Links externos
+    usam o endereço completo do site:</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Documentação de HTML - MDN</a></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+    </ul>
+
+    <a href="#topo">Voltar para o início</a>
+</body>
+</html>

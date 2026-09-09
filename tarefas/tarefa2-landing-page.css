@@ -1,0 +1,130 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #1f4e79;
+    padding: 20px
+}
+
+.menu {
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+
+.menu a {
+    color: white
+}
+
+.logo { 
+    font-size: larger;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.apresentacao-texto h2 {
+    color: #1f4e79;
+    font-size: 24px;
+}
+
+.apresentacao-texto p {
+    color: #333333;
+    font-size: 14px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #1f4e79;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.destaque {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaf2f8;
+    border: 1px solid #5dade2;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+}
+
+.numero {
+    color: #1f4e79;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-alunos{
+    color:#333333;
+}
+
+.secao-cursos {
+
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.secao-cursos h2 {
+    text-align: center;
+    color: #1f4e79;
+}
+
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.curso h3 {
+    color: #1f4e79;
+    margin: 0;
+}
+
+.curso p {
+    color: #333333;
+    margin: 0;
+}
+
+.carga-horaria {
+    color: #117864;
+}
+
+.botao-curso {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 0;
+}

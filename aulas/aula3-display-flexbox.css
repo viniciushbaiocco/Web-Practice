@@ -1,0 +1,165 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    margin: 0;
+
+}
+
+
+#cabecalho {
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.secao {
+
+    background-color: white;
+
+    width: 900px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 8px;
+
+}
+
+.exemplo-block{
+    display: block;
+    background-color: #d7bde2;
+    border: 1px solid #7d3c98;
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+.exemplo-inline{
+    display: inline;
+    padding: 10px;
+    background-color: #abebc6;
+    border: 1px solid #239b56;
+    width: 400px;
+    height: 100px;
+}
+
+.exemplo-inline-block{
+    display: inline-block;
+    background-color: #f5b7b1;
+    border: 1px solid #c0392b;
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+.item{
+    background-color: #5dade2;
+    color: white;
+    border: 2px solid #21618c;
+    padding: 20px;
+}
+
+.flex-basico{
+    display:flex;
+    border: 3px solid #333;
+    padding: 10px;
+}
+
+.flex-row{
+    border: 3px solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    border: 3px solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+    border: 3px solid #333;
+    padding: 10px;
+}
+
+.flex-justify-between{
+    display: flex;
+    justify-content:space-between;
+    border: 3px solid #333;
+    padding: 10px;
+    flex-direction: column;
+    height: 300px;
+}
+
+.flex-align{
+    display: flex;
+    height: 200px;
+    align-items:center;
+    justify-content: center;
+    border: 3px solid #333;
+}
+
+.flex-gap{
+    display: flex;
+    border: 3px solid #333;
+    gap: 88.3619%;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: brown;
+    border: 2px solid orange;
+    height: 100px;
+    width: 100px;
+}
+
+.flex-wrap{
+    display:flex;
+    border: 3px solid #333;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.produtos{
+    display: flex;
+    border: 3px solid #333;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100%
+}
+
+.produto{
+    width: 220px;
+    background-color: #eaf2f8;
+    border: 1px solid #5dade2;
+    border-radius: 10px;
+}
+
+.produto h3{
+    color: #333;
+}
+
+.preco {
+    color: #117864;
+    font-size: 20px;
+    font-weight: bold;
+}
