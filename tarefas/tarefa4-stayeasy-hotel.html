@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEasy - Solicitação de Reserva</title>
+    <link rel="stylesheet" href="tarefa3-stayeasy-hotel.css">
+    <script src="tarefa3-stayeasy-hotel.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <h1>StayEasy</h1>
+            <p>Sua estadia à beira-mar</p>
+        </div>
+    </header>
+    <main class="conteudo">
+        <h2>Solicite sua reserva</h2>
+        <p class="introducao">Preencha os dados abaixo. Os campos são conferidos antes do envio.</p>
+        <form id="form-reserva" novalidate>
+            <fieldset>
+                <legend>Dados do hóspede</legend>
+                <div class="linha linha-completa">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required minlength="5">
+                    <p class="erro" id="erro-nome"></p>
+                </div>
+                <div class="linha">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+                    <p class="erro" id="erro-email"></p>
+                </div>
+                <div class="linha">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Somente números, com DDD" required maxlength="11">
+                    <p class="erro" id="erro-telefone"></p>
+                </div>
+                <div class="linha">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                    <p class="erro" id="erro-nascimento"></p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Estadia</legend>
+                <div class="linha">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                    <p class="erro" id="erro-checkin"></p>
+                </div>
+                <div class="linha">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                    <p class="erro" id="erro-checkout"></p>
+                </div>
+                <div class="linha">
+                    <label for="hospedes">Quantidade de hóspedes</label>
+                    <input type="number" id="hospedes" name="hospedes" placeholder="De 1 a 5" required min="1" max="5">
+                    <p class="erro" id="erro-hospedes"></p>
+                </div>
+                <div class="linha">
+                    <label for="quarto">Tipo de quarto</label>
+                    <select id="quarto" name="quarto" required>
+                        <option value="">Selecione</option>
+                        <option value="Individual">Individual (até 1 pessoa)</option>
+                        <option value="Duplo">Duplo (até 2 pessoas)</option>
+                        <option value="Família">Família (até 5 pessoas)</option>
+                    </select>
+                    <p class="erro" id="erro-quarto"></p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Acompanhamento da reserva</legend>
+                <div class="linha">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="8">
+                    <p class="dica">Mínimo de 8 caracteres, com uma letra maiúscula e um número.</p>
+                    <p class="erro" id="erro-senha"></p>
+                </div>
+                <div class="linha">
+                    <label for="confirma-senha">Confirmação da senha</label>
+                    <input type="password" id="confirma-senha" name="confirma-senha" required>
+                    <p class="erro" id="erro-confirma-senha"></p>
+                </div>
+                <div class="linha linha-completa">
+                    <label for="aceite" class="aceite" id="rotulo-aceite">
+                        <input type="checkbox" id="aceite" name="aceite" required>
+                        Declaro que li e concordo com as condições da reserva.
+                    </label>
+                    <p class="erro" id="erro-aceite"></p>
+                </div>
+            </fieldset>
+            <button type="submit" class="botao">Solicitar reserva</button>
+        </form>
+        <section id="resultado" class="resultado escondido">
+            <p class="sucesso">Solicitação de reserva realizada com sucesso!</p>
+            <p class="diarias" id="texto-diarias"></p>
+            <pre id="dados-reserva"></pre>
+        </section>
+    </main>
+</body>
+</html>

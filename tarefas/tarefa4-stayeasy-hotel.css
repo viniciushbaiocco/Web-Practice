@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #fdf6ec;
+    color: #2f3e46;
+    margin: 0;
+}
+.cabecalho {
+    background-color: #0e7c86;
+    color: white;
+    padding: 40px 0;
+    border-bottom: 8px solid #e8d9c0;
+}
+.cabecalho-conteudo, .conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cabecalho-conteudo {
+    padding: 0 20px;
+}
+.cabecalho h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.cabecalho p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+.conteudo {
+    padding: 30px 20px;
+}
+.conteudo h2 {
+    color: #0b5f66;
+    font-size: 28px;
+    margin: 0;
+}
+.introducao {
+    margin: 8px 0 30px 0;
+}
+fieldset {
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 0 0 30px 0;
+}
+legend {
+    background-color: #0e7c86;
+    color: white;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+.linha {
+    margin-bottom: 14px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+input, select {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #e8d9c0;
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 16px;
+}
+input[type="checkbox"] {
+    width: auto;
+}
+.aceite {
+    font-weight: normal;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+.dica, .erro {
+    font-size: 14px;
+    margin: 6px 0 0 0;
+}
+.dica {
+    color: #6b7b83;
+}
+.botao {
+    display: block;
+    margin: 0 auto;
+    background-color: #ff6f59;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 40px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.botao:hover {
+    background-color: #e5553f;
+    transform: translateY(-3px);
+}
+.campo-invalido {
+    border-color: #c0392b;
+    background-color: #fdecea;
+}
+.erro {
+    color: #c0392b;
+}
+.resultado {
+    background-color: white;
+    border: 2px solid #0e7c86;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.sucesso {
+    color: #0b5f66;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.diarias {
+    color: #e5553f;
+    font-weight: bold;
+    margin: 8px 0 16px 0;
+}
+pre {
+    background-color: #e3f4f5;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0;
+    font-size: 14px;
+}
+.escondido {
+    display: none;
+}
+@media (min-width: 768px) {
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 16px;
+    }
+    .linha {
+        width: calc(50% - 8px);
+    }
+    .linha-completa {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .botao {
+        width: 100%;
+    }
+}
